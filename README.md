@@ -4,7 +4,6 @@ Combatiendo el cambio climático con Machine Learning!
 El presente repositorio cuenta con mis respuestas para el desafío Spike Octubre 2019 - Predicción de caudales extremos en Chile.
 
 
-Descripción del Challenge:
 
 ## Motivación
 
@@ -20,28 +19,3 @@ Algunas de las preguntas claves que en Chile debemos responder son:
 - ¿Ha aumentado la frecuencia de olas de calor en Chile? Para esto se deben analizar las estaciones de temperatura.
 - ¿Existe una relación entre olas de calor y eventos extremos de caudal? 
 - De existir una relación entre olas de calor y eventos extremos de caudal, ¿se puede explicar este evento extremo por las características de la cuenca en donde ocurre el peakflow?
-
-
-## Instrucciones
-
-Como dice el título, vamos a predecir los caudales extremos para cuencas en Chile. Para eso armamos un dataset usando datos públicos y reales de estaciones metereológicas.
-
-Cada fila representa una medida de caudal diaria en una estación medidora. La medición de caudal estará asociada a características de la cuenca (fijas) y a mediciones diarias de temperatura y precipitación de estaciones cercanas.
-
-El archivo caudal_extra.csv contiene todos los datos que van a necesitar para este desafío. Esta base la produjimos en Spike y sintetiza información de caudal, precipitación y temperatura.
-
-*Nota sobre la producción de la base*: Las estaciones que miden el caudal y las que miden la temperatura y la precipitación no están en el mismo lugar. Para construir esta base, tomamos el polígono de la cuenca aguas arriba que corresponde a la estación de caudal y luego identificamos las estaciones de temperatura y precipitación que se encuentran en ese polígono. En muchos casos hay más de una estación, así que, por simpleza, tomamos el promedio de todas esas estaciones. De esta manera, cada día de medición de caudal va a estar asociada a una única medición de temperatura y de precipitación relevante (aunque puede haber cuencas sin estaciones de temperatura o precipitación).
-
-La base pesa 256 megas. Si tienen problemas de RAM, tomen un subconjunto de las estaciones y continúen con el desafío.
-Esta base tiene las siguientes variables:
-
-- codigo_estacion: el código de la estación de medición de caudal.
-- nombre: nombre del lugar en la cuenca donde está la estación.
-- fecha: día de medición.
-- caudal: medición de caudal de ese día.
-- gauge_id: id de la cuenca.
-- precip_promedio: precipitación promedio de ese día en la cuenca.
-- temp_max_promedio: temperatura máxima  promedio de ese día en la cuenca.
-
-Hemos creado además un canal en Gitter para que todos puedan colaborar entre sí. Ingresa en https://gitter.im/desafioSpike (se requiere cuenta github o gitlab).
-
