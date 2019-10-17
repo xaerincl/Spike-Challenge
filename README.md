@@ -1,7 +1,8 @@
 # Spike-Challenge
 Combatiendo el cambio climático con Machine Learning!
 
-El presente repositorio cuenta con mis respuestas para el desafío Spike Octubre 2019 - Predicción de caudales extremos en Chile, estas se encuentran en el archivo https://github.com/xaerincl/Spike-Challenge/blob/master/SpikeChallengeOscarM.ipynb .
+El presente repositorio cuenta con mis respuestas para el desafío Spike Octubre 2019 - Predicción de caudales extremos en Chile.
+Recomiendo descargar tanto el notebook: https://github.com/xaerincl/Spike-Challenge/blob/master/SpikeChallengeOscarM.ipynb como el modelo entrenado https://github.com/xaerincl/Spike-Challenge/blob/master/modelo_final.h5 .
 
 
 
